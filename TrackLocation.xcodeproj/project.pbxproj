@@ -12,6 +12,17 @@
 		2B8A2D5F20AF00AA00F49348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8A2D5D20AF00AA00F49348 /* Main.storyboard */; };
 		2B8A2D6120AF00AA00F49348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8A2D6020AF00AA00F49348 /* Assets.xcassets */; };
 		2B8A2D6420AF00AA00F49348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8A2D6220AF00AA00F49348 /* LaunchScreen.storyboard */; };
+		2B8A2D6F20AF047800F49348 /* LocationAuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A2D6E20AF047800F49348 /* LocationAuthProtocol.swift */; };
+		2B8A2D7320AF06C200F49348 /* TLAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A2D7220AF06C200F49348 /* TLAuth.swift */; };
+		2B97770920EB918A00B8A475 /* TLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97770820EB918A00B8A475 /* TLError.swift */; };
+		2B97770B20EB94BC00B8A475 /* TLAuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97770A20EB94BC00B8A475 /* TLAuthType.swift */; };
+		2B97770D20EB987000B8A475 /* TLAuthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97770C20EB987000B8A475 /* TLAuthDelegate.swift */; };
+		2B97771020EB9BD600B8A475 /* TLUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97770F20EB9BD600B8A475 /* TLUpdate.swift */; };
+		2B97771220EB9D6A00B8A475 /* TLUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97771120EB9D6A00B8A475 /* TLUpdateDelegate.swift */; };
+		2B97771420EB9EA300B8A475 /* TLUpdateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97771320EB9EA300B8A475 /* TLUpdateProtocol.swift */; };
+		2BE06D02210F42C900735E95 /* TLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE06D01210F42C900735E95 /* TLocationManager.swift */; };
+		2BE06D04210F4A9B00735E95 /* TLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE06D03210F4A9B00735E95 /* TLConfig.swift */; };
+		2BE06D06210F55DF00735E95 /* TLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE06D05210F55DF00735E95 /* TLocationManagerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		2B8A2D6020AF00AA00F49348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8A2D6320AF00AA00F49348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B8A2D6520AF00AA00F49348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B8A2D6E20AF047800F49348 /* LocationAuthProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationAuthProtocol.swift; sourceTree = "<group>"; };
+		2B8A2D7220AF06C200F49348 /* TLAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLAuth.swift; sourceTree = "<group>"; };
+		2B97770820EB918A00B8A475 /* TLError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLError.swift; sourceTree = "<group>"; };
+		2B97770A20EB94BC00B8A475 /* TLAuthType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLAuthType.swift; sourceTree = "<group>"; };
+		2B97770C20EB987000B8A475 /* TLAuthDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLAuthDelegate.swift; sourceTree = "<group>"; };
+		2B97770F20EB9BD600B8A475 /* TLUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLUpdate.swift; sourceTree = "<group>"; };
+		2B97771120EB9D6A00B8A475 /* TLUpdateDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLUpdateDelegate.swift; sourceTree = "<group>"; };
+		2B97771320EB9EA300B8A475 /* TLUpdateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLUpdateProtocol.swift; sourceTree = "<group>"; };
+		2BE06D01210F42C900735E95 /* TLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLocationManager.swift; sourceTree = "<group>"; };
+		2BE06D03210F4A9B00735E95 /* TLConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLConfig.swift; sourceTree = "<group>"; };
+		2BE06D05210F55DF00735E95 /* TLocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLocationManagerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,10 @@
 		2B8A2D5820AF00A900F49348 /* TrackLocation */ = {
 			isa = PBXGroup;
 			children = (
+				2B97770E20EB9B2C00B8A475 /* Utiles */,
+				2B8A2D6D20AF03FE00F49348 /* locationAuthorization */,
+				2B8A2D6C20AF03E600F49348 /* locationUpdate */,
+				2B8A2D6B20AF03CC00F49348 /* locationManager */,
 				2B8A2D5920AF00AA00F49348 /* AppDelegate.swift */,
 				2B8A2D5B20AF00AA00F49348 /* ViewController.swift */,
 				2B8A2D5D20AF00AA00F49348 /* Main.storyboard */,
@@ -62,6 +88,45 @@
 				2B8A2D6520AF00AA00F49348 /* Info.plist */,
 			);
 			path = TrackLocation;
+			sourceTree = "<group>";
+		};
+		2B8A2D6B20AF03CC00F49348 /* locationManager */ = {
+			isa = PBXGroup;
+			children = (
+				2BE06D01210F42C900735E95 /* TLocationManager.swift */,
+				2BE06D03210F4A9B00735E95 /* TLConfig.swift */,
+				2BE06D05210F55DF00735E95 /* TLocationManagerDelegate.swift */,
+			);
+			name = locationManager;
+			sourceTree = "<group>";
+		};
+		2B8A2D6C20AF03E600F49348 /* locationUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				2B97771320EB9EA300B8A475 /* TLUpdateProtocol.swift */,
+				2B97771120EB9D6A00B8A475 /* TLUpdateDelegate.swift */,
+				2B97770F20EB9BD600B8A475 /* TLUpdate.swift */,
+			);
+			name = locationUpdate;
+			sourceTree = "<group>";
+		};
+		2B8A2D6D20AF03FE00F49348 /* locationAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				2B8A2D6E20AF047800F49348 /* LocationAuthProtocol.swift */,
+				2B97770C20EB987000B8A475 /* TLAuthDelegate.swift */,
+				2B8A2D7220AF06C200F49348 /* TLAuth.swift */,
+			);
+			name = locationAuthorization;
+			sourceTree = "<group>";
+		};
+		2B97770E20EB9B2C00B8A475 /* Utiles */ = {
+			isa = PBXGroup;
+			children = (
+				2B97770820EB918A00B8A475 /* TLError.swift */,
+				2B97770A20EB94BC00B8A475 /* TLAuthType.swift */,
+			);
+			name = Utiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +202,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B8A2D6F20AF047800F49348 /* LocationAuthProtocol.swift in Sources */,
+				2B97770B20EB94BC00B8A475 /* TLAuthType.swift in Sources */,
+				2BE06D06210F55DF00735E95 /* TLocationManagerDelegate.swift in Sources */,
 				2B8A2D5C20AF00AA00F49348 /* ViewController.swift in Sources */,
 				2B8A2D5A20AF00AA00F49348 /* AppDelegate.swift in Sources */,
+				2B97771420EB9EA300B8A475 /* TLUpdateProtocol.swift in Sources */,
+				2B97771220EB9D6A00B8A475 /* TLUpdateDelegate.swift in Sources */,
+				2BE06D02210F42C900735E95 /* TLocationManager.swift in Sources */,
+				2B97771020EB9BD600B8A475 /* TLUpdate.swift in Sources */,
+				2B8A2D7320AF06C200F49348 /* TLAuth.swift in Sources */,
+				2B97770920EB918A00B8A475 /* TLError.swift in Sources */,
+				2B97770D20EB987000B8A475 /* TLAuthDelegate.swift in Sources */,
+				2BE06D04210F4A9B00735E95 /* TLConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +380,7 @@
 				2B8A2D6A20AF00AA00F49348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
