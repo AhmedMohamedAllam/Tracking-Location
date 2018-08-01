@@ -12,45 +12,38 @@ import CoreLocation
 class TLAuth:NSObject, TLAuthProtocol{
     var delegate: TLAuthDelegate?
     fileprivate var authError: TLError?
+    private var authType: TLAuthType
+    let locationManager = CLLocationManager()
+
     
-    func requestAuthorization(authType type: TLAuthType = .whenInUse) {
+    init(configuration config: TLConfig) {
+        authType = config.authType
+        super.init()
+        locationManager.delegate = self
+    }
+       func requestAuthorization() {
         
-        guard isLocationServiceAvalible()else{
-            authError = TLError(with: "error: location service is not Avalible.")
-            delegate?.didFinishLocationAuth(withError: authError)
-            return
-        }
-        
-        guard isLocationServiceEnabled()else{
-            authError = TLError(with: "error: location service is not enabled.")
-            delegate?.didFinishLocationAuth(withError: authError)
-            return
-        }
-        
-        switch type {
-        case .always:
-            locationManager.requestAlwaysAuthorization()
-        case .whenInUse:
-            locationManager.requestWhenInUseAuthorization()
+        if isLocationServiceAuthorized(){
+            delegate?.didFinishLocationAuth(withError: nil)
+        }else{
+            switch authType {
+            case .always:
+                locationManager.requestAlwaysAuthorization()
+            case .whenInUse:
+                locationManager.requestWhenInUseAuthorization()
+            }
         }
     }
 
     
    
-    let locationManager = CLLocationManager()
     
     private func requestAlwaysAuthorization() {
-        guard isLocationServiceAvalible() && isLocationServiceEnabled()else{
-            locationManager.requestAlwaysAuthorization()
-            return
-        }
+        locationManager.requestAlwaysAuthorization()
     }
     
     private func requestWhenInUseAuthorization() {
-        guard isLocationServiceAvalible() && isLocationServiceEnabled() else{
-            locationManager.requestWhenInUseAuthorization()
-            return
-        }
+        locationManager.requestWhenInUseAuthorization()
     }
     
     func isLocationServiceEnabled() -> Bool {
@@ -72,7 +65,7 @@ extension TLAuth: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
-            delegate?.didFinishLocationAuth(withError: authError)
+            delegate?.didFinishLocationAuth(withError: nil)
         case .denied:
             authError = TLError(with: "Location Service access (denied)")
             delegate?.didFinishLocationAuth(withError: authError)

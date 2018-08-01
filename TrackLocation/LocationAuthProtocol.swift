@@ -9,7 +9,7 @@
 import Foundation
 protocol TLAuthProtocol{
     var  delegate: TLAuthDelegate? {set get}
-    func requestAuthorization(authType type: TLAuthType)
+    func requestAuthorization()
     func isLocationServiceEnabled() -> Bool
     func isLocationServiceAuthorized() -> Bool
 }

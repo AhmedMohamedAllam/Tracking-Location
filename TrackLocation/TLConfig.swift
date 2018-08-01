@@ -12,4 +12,6 @@ import CoreLocation
 struct TLConfig {
     var locationDistance: CLLocationDistance = kCLDistanceFilterNone // default distance
     var desiredAccuracy: CLLocationAccuracy = kCLLocationAccuracyBest // default accuracy
+    var authType: TLAuthType = .always
+    var pausesLocationUpdatesAutomatically: Bool = true
 }

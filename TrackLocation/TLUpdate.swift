@@ -19,8 +19,15 @@ class TLUpdate:NSObject, TLUpdateProtocol {
     
     
     init(withConfiguration config: TLConfig) {
+        super.init()
         self.distanceFilter = config.locationDistance
         self.disiredAccuracy = config.desiredAccuracy
+        locationManager.pausesLocationUpdatesAutomatically = config.pausesLocationUpdatesAutomatically
+        locationManager.delegate = self
+    }
+    
+    override init() {
+        super.init()
     }
     
     func startTrackingUpdates() {
@@ -48,6 +55,7 @@ extension TLUpdate: CLLocationManagerDelegate{
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        
         delegate?.didUpdateLocation(newLocation: nil, withError: error)
     }
 }

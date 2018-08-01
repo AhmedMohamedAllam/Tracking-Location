@@ -18,17 +18,15 @@ class ViewController: UIViewController, TLocationManagerDelegate {
         super.viewDidLoad()
         
         locationManager = TLocationManager()
+        locationManager.delegate = self
+        locationManager.startUpdateLocation()
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func didUpdateLocation(newLocation location: CLLocation?, withError error: Error?) {
         guard error == nil else {
-            print(error!.localizedDescription)
+            print(error!)
             return
         }
         

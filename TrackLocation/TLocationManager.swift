@@ -15,11 +15,12 @@ class TLocationManager{
     var delegate: TLocationManagerDelegate?
     
     init(withConfiguration config: TLConfig = TLConfig()) {
-        self.locationAuth = TLAuth()
+        self.locationAuth = TLAuth(configuration: config)
         self.locationUpdate = TLUpdate(withConfiguration: config)
         
         locationAuth.delegate = self
         locationUpdate.delegate = self
+        
     }
     
     func startUpdateLocation(){
